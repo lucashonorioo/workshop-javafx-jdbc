@@ -12,11 +12,10 @@ public class Department implements Serializable{
 	public Department() {
 		
 	}
-
+	
 	public Department(Integer id, String name) {
 		this.id = id;
 		this.name = name;
-	
 	}
 
 	public Integer getId() {
@@ -34,9 +33,7 @@ public class Department implements Serializable{
 	public void setName(String name) {
 		this.name = name;
 	}
-
-
-
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
@@ -56,8 +53,6 @@ public class Department implements Serializable{
 
 	@Override
 	public String toString() {
-		return "Person [id=" + id + ", name=" + name + "]";
+		return "Department [id=" + id + ", name=" + name + "]";
 	}
-	
-	
 }
